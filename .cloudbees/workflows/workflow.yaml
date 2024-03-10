@@ -23,7 +23,7 @@ jobs:
         uses: docker://maven:3.9.6-eclipse-temurin-17
         shell: sh
         run: |
-          mmvn clean install -Dquickly
+          mvn clean install -Dquickly
 
       - name: Show built files in target dir
         uses: docker://golang:1.20.3-alpine3.17
